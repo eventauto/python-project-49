@@ -1,5 +1,5 @@
 def greetings():
-    print("Welcome to the Brain Games !")
+    print("Welcome to the Brain Games!")
 
 
 def welcome_user():
