@@ -10,9 +10,9 @@ def calc_game():
         num1 = random.randint(1,100)
         num2 = random.randint(1,100)
         operator = random.choice(['+', '-','*'])
-        expression = f'{num1}{operator}{num2}'
+        expression = f'{num1} {operator} {num2}'
         result = eval(expression)
-        print(f'Question:{expression}')
+        print(f'Question: {expression}')
         answer = int(input().strip())
         if answer == result:
             print("Correct!")
