@@ -18,7 +18,7 @@ def calc_game():
             print("Correct!")
             right_answer = right_answer + 1
         else:
-            print(f"'{answer} is wrong answer ;(. Correct answer was '{result}'. ")
+            print(f"'{answer}'is wrong answer ;(. Correct answer was '{result}'. ")
             print(f"Let`s try again, {user_name}!")
             return
     print(f"Congratulations, {user_name}!")
