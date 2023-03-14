@@ -20,6 +20,7 @@ def calc_game():
         else:
             print(f"'{answer} is wrong answer ;(. Correct answer was '{result}'. ")
             print(f"Let`s try again, {user_name}!")
+            return
     print(f"Congratulations, {user_name}!")
 
 def main():
