@@ -15,12 +15,15 @@ def even_game():
         num = random.randint(1, 100)
         print(f'Question: {num}')
         answer = input('Your answer: ')
-        if answer == 'yes' and is_even(num) or answer == 'no' and not is_even(num):
+        if answer == 'yes' and is_even(num) \
+                or answer == 'no' and not is_even(num):
             print('Correct!')
             right_answer += 1
         else:
             correct_answer = 'yes' if is_even(num) else 'no'
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {user_name}!")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f" Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {user_name}!")
             return
     print(f'Congratulations, {user_name}!')
 

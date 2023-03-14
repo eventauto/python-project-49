@@ -1,12 +1,14 @@
 import random
 from brain_games.cli import welcome_user, greetings
 
+
 def generate_progression() -> list[int]:
     start = random.randint(1, 50)
     step = random.randint(2, 5)
     length = random.randint(5, 10)
     progression = [start + i * step for i in range(length)]
     return progression
+
 
 def play_game():
     greetings()
@@ -30,10 +32,12 @@ def play_game():
             counter += 1
             print("Correct!")
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f" Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             return
     print(f"Congratulations, {user_name}!")
+
 
 def main():
     play_game()
