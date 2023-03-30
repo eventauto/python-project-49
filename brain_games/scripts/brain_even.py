@@ -14,7 +14,7 @@ def game_logic():
 
 def main():
     task_description = (
-        'Answer "yes" if given number is prime. '
+        'Answer "yes" if given number is even. '
         'Otherwise answer "no".')
     play_game(game_logic, task_description)
 
