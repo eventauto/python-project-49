@@ -12,8 +12,8 @@ def game_logic():
 
 
 def main():
-    task_description = 'What is the result of the expression?'
-    play_game(game_logic, task_description)
+    task_desc = 'What is the result of the expression?'
+    play_game(game_logic, task_desc)
 
 
 if __name__ == '__main__':

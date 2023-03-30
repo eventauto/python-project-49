@@ -11,8 +11,8 @@ def game_logic():
 
 
 def main():
-    task_description = 'Find the greatest common divisor of given numbers.'
-    play_game(game_logic, task_description)
+    task_desc = 'Find the greatest common divisor of given numbers.'
+    play_game(game_logic, task_desc)
 
 
 if __name__ == '__main__':

@@ -20,8 +20,8 @@ def game_logic():
 
 
 def main():
-    task_description = 'What number is missing in the progression?'
-    play_game(game_logic, task_description)
+    task_desc = 'What number is missing in the progression?'
+    play_game(game_logic, task_desc)
 
 
 if __name__ == '__main__':
