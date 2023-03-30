@@ -16,7 +16,9 @@ def play_game(game_logic, task_description, rounds=3):
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             return
 
