@@ -1,32 +1,19 @@
 import random
-from brain_games.cli import welcome_user, greetings
+from brain_games.engine import play_game
 
 
-def calc_game():
-    greetings()
-    user_name = welcome_user()
-    print('What is the result of the expression?')
-    right_answer = 0
-    while right_answer < 3:
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
-        operator = random.choice(['+', '-', '*'])
-        expression = f'{num1} {operator} {num2}'
-        res = eval(expression)
-        print(f'Question: {expression}')
-        answer = int(input().strip())
-        if answer == res:
-            print("Correct!")
-            right_answer = right_answer + 1
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{res}'.")
-            print(f"Let's try again, {user_name}!")
-            return
-    print(f"Congratulations, {user_name}!")
+def game_logic():
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    operator = random.choice(['+', '-', '*'])
+    expression = f'{num1} {operator} {num2}'
+    res = eval(expression)
+    return expression, str(res)
 
 
 def main():
-    calc_game()
+    task_description = 'What is the result of the expression?'
+    play_game(game_logic, task_description)
 
 
 if __name__ == '__main__':

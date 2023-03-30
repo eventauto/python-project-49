@@ -1,8 +1,8 @@
 import random
-from brain_games.cli import welcome_user, greetings
+from brain_games.engine import play_game
 
 
-def generate_progression() -> list[int]:
+def generate_progression():
     start = random.randint(1, 50)
     step = random.randint(2, 5)
     length = random.randint(5, 10)
@@ -10,37 +10,18 @@ def generate_progression() -> list[int]:
     return progression
 
 
-def play_game():
-    greetings()
-    user_name = welcome_user()
-    print('What number is missing in the progression?')
-    counter = 0
-    while counter < 3:
-        progression = generate_progression()
-        hidden_index = random.randint(0, len(progression) - 1)
-        hidden_value = progression[hidden_index]
-        progression[hidden_index] = '..'
-        question = ' '.join(map(str, progression))
-        user_answer = input(f"Question: {question}\nYour answer: ")
-        try:
-            user_answer = int(user_answer)
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
-        correct_answer = hidden_value
-        if user_answer == correct_answer:
-            counter += 1
-            print("Correct!")
-        else:
-            print(f"'{user_answer}' is wrong answer ;(."
-                  f" Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {user_name}!")
-            return
-    print(f"Congratulations, {user_name}!")
+def game_logic():
+    progression = generate_progression()
+    hidden_index = random.randint(0, len(progression) - 1)
+    hidden_value = progression[hidden_index]
+    progression[hidden_index] = '..'
+    question = ' '.join(map(str, progression))
+    return question, str(hidden_value)
 
 
 def main():
-    play_game()
+    task_description = 'What number is missing in the progression?'
+    play_game(game_logic, task_description)
 
 
 if __name__ == '__main__':
