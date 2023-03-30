@@ -1,10 +1,10 @@
 from brain_games.cli import welcome_user, greetings
 
 
-def play_game(game_logic, task_description, rounds=3):
+def play_game(game_logic, task_desc, rounds=3):
     greetings()
     user_name = welcome_user()
-    print(task_description)
+    print(task_desc)
 
     correct_answers = 0
     while correct_answers < rounds:
