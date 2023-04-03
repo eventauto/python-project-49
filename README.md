@@ -25,3 +25,12 @@ make install установит пакетный менеджер poetry для 
 make build подготовит пакет к установке
 
 make package-install установит пакет на ваш компьютер
+
+<a href="https://asciinema.org/a/q2RMwjolusLtyA5BPoNV8lbwj" target="_blank"><img src="https://asciinema.org/a/q2RMwjolusLtyA5BPoNV8lbwj.svg" /></a>
+
+**Описание запуска и процесса игр**
+
+Brain-even - игра предлагает определить чётное ли число. Для запуска наберите, пожалуйста в командной строке brain-even
+
+[![asciicast](https://asciinema.org/a/GpmVW46yZVAJPsoZbiUAV6xeI.svg)](https://asciinema.org/a/GpmVW46yZVAJPsoZbiUAV6xeI)
+
