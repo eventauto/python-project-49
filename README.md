@@ -18,19 +18,30 @@ python --version
 
 Замените your_username на имя пользователя в вашем GitHub и убедитесь, что у вас есть доступ к репозиторию.
 
-3. Когда репозиторий скопируется перейдите в директорию с пакетом, набрав cd python-project-49/ и выполните последовательно следующие команды:
+3. Когда репозиторий скопируется перейдите в директорию с пакетом, набрав cd python-project-49/ и выполните последовательно следующую команду:
+poetry install
 
-make install установит пакетный менеджер poetry для управления зависимостями
-
-make build подготовит пакет к установке
-
-make package-install установит пакет на ваш компьютер
 
 <a href="https://asciinema.org/a/q2RMwjolusLtyA5BPoNV8lbwj" target="_blank"><img src="https://asciinema.org/a/q2RMwjolusLtyA5BPoNV8lbwj.svg" /></a>
 
 **Описание запуска и процесса игр**
 
-Brain-even - игра предлагает определить чётное ли число. Для запуска наберите, пожалуйста в командной строке brain-even
+**Brain-even** - игра предлагает определить чётное ли число. Наберите команду poetry run brain-even
 
 [![asciicast](https://asciinema.org/a/GpmVW46yZVAJPsoZbiUAV6xeI.svg)](https://asciinema.org/a/GpmVW46yZVAJPsoZbiUAV6xeI)
 
+**Brain-calc** - игра предлагает выполнить арифметические действия. Для запуска наберите poetry run brain-calc
+
+[![asciicast](https://asciinema.org/a/lFGlrtH5ay2yze1DwzX6TPpjK.svg)](https://asciinema.org/a/lFGlrtH5ay2yze1DwzX6TPpjK)
+
+**Brain-gcd** - игра предлагает вам найти наибольший общий делитель для двух чисел. Для запуска наберите poetry run brain-gcd
+
+[![asciicast](https://asciinema.org/a/HzjqKW6kxqdGINU1FxeuIGkOA.svg)](https://asciinema.org/a/HzjqKW6kxqdGINU1FxeuIGkOA)
+
+**Brain-progression** - игра предлагает найти пропущенное число в арифметической прогрессии. Для запуска наберите poetry run brain-progression
+
+[![asciicast](https://asciinema.org/a/LqFrXAPqj41Z8rx3TTfWV5tQn.svg)](https://asciinema.org/a/LqFrXAPqj41Z8rx3TTfWV5tQn)
+
+**Brain-prime** - игра предлагает определить является ли число простым.  Для запуска наберите poetry run brain-prime
+
+[![asciicast](https://asciinema.org/a/mUwOfBUPjrpPj37VXCnFLOap6.svg)](https://asciinema.org/a/mUwOfBUPjrpPj37VXCnFLOap6)
