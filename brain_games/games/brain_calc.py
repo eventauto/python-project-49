@@ -8,4 +8,3 @@ def game_logic():
     expression = f'{num1} {operator} {num2}'
     res = eval(expression)
     return expression, str(res)
-

@@ -8,3 +8,4 @@ def game_logic():
     correct_answer = gcd(num1, num2)
     return f'{num1} {num2}', str(correct_answer)
 
+
