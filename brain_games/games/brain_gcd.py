@@ -1,5 +1,4 @@
 import random
-from brain_games.engine import play_game
 from math import gcd
 
 
@@ -9,11 +8,3 @@ def game_logic():
     correct_answer = gcd(num1, num2)
     return f'{num1} {num2}', str(correct_answer)
 
-
-def main():
-    task_desc = 'Find the greatest common divisor of given numbers.'
-    play_game(game_logic, task_desc)
-
-
-if __name__ == '__main__':
-    main()

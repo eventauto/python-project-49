@@ -1,5 +1,4 @@
 import random
-from brain_games.engine import play_game
 
 
 def generate_progression():
@@ -17,12 +16,3 @@ def game_logic():
     progression[hidden_index] = '..'
     question = ' '.join(map(str, progression))
     return question, str(hidden_value)
-
-
-def main():
-    task_desc = 'What number is missing in the progression?'
-    play_game(game_logic, task_desc)
-
-
-if __name__ == '__main__':
-    main()
