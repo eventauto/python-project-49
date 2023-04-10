@@ -10,6 +10,7 @@ MAX_NUMBER = 100
 def is_even(num):
     return num % 2 == 0
 
+
 def game_logic():
     num = random.randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = 'yes' if is_even(num) else 'no'
