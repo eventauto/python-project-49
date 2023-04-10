@@ -3,12 +3,12 @@ import random
 task_description = 'What number is missing in the progression?'
 
 
-MIN_PROGRESSION_START = 1
-MAX_PROGRESSION_START = 50
-MIN_PROGRESSION_STEP = 2
-MAX_PROGRESSION_STEP = 5
-MIN_PROGRESSION_LENGTH = 5
-MAX_PROGRESSION_LENGTH = 10
+MIN_PROG_START = 1
+MAX_PROG_START = 50
+MIN_PROG_STEP = 2
+MAX_PROG_STEP = 5
+MIN_PROG_LENGTH = 5
+MAX_PROG_LENGTH = 10
 
 
 def generate_progression(initial_term, common_difference, length):
@@ -27,9 +27,9 @@ def format_progression(progression):
 
 
 def game_logic():
-    initial_term = random.randint(MIN_PROGRESSION_START, MAX_PROGRESSION_START)
-    common_difference = random.randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
-    length = random.randint(MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
+    initial_term = random.randint(MIN_PROG_START, MAX_PROG_START)
+    common_difference = random.randint(MIN_PROG_STEP, MAX_PROG_STEP)
+    length = random.randint(MIN_PROG_LENGTH, MAX_PROG_LENGTH)
 
     progression = generate_progression(initial_term, common_difference, length)
     hidden_index = random.randint(0, len(progression) - 1)

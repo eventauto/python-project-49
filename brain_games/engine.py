@@ -1,5 +1,6 @@
 from brain_games.cli import welcome_user, greetings
 
+
 ROUNDS_COUNT = 3
 
 def play_game(game_logic, task_desc, rounds=ROUNDS_COUNT):
